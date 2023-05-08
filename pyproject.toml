@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "python-setup"
+version = "0.1.0"
+description = ""
+authors = ["David Dusek <dusek.d@seznam.cz>"]
+readme = "README.md"
+packages = [{include = "python_setup"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pylama = {extras = ["all"], version = "^8.4.1"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
